@@ -7,11 +7,21 @@ import 'firebase/functions';
 import 'firebase/firestore';
 
 const prodConfig = {
-
+  apiKey: 'AIzaSyCMaA64Ofz8aT0cNbTeEzA9w5DUE9njcP4',
+  authDomain: 'gitguardian-tech-interview.firebaseapp.com',
+  projectId: 'gitguardian-tech-interview',
+  storageBucket: 'gitguardian-tech-interview.appspot.com',
+  messagingSenderId: '553966667081',
+  appId: '1:553966667081:web:7d16be5ee7fa5ccdf40698',
 };
 
 const devConfig = {
-
+  apiKey: 'AIzaSyCMaA64Ofz8aT0cNbTeEzA9w5DUE9njcP4',
+  authDomain: 'gitguardian-tech-interview.firebaseapp.com',
+  projectId: 'gitguardian-tech-interview',
+  storageBucket: 'gitguardian-tech-interview.appspot.com',
+  messagingSenderId: '553966667081',
+  appId: '1:553966667081:web:7d16be5ee7fa5ccdf40698',
 };
 
 firebase.initializeApp(
