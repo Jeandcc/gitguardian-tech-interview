@@ -1,0 +1,11 @@
+{
+  "references": [
+    { "path": "./packages/types" },
+    { "path": "./packages/front-end" },
+    { "path": "./packages/back-end" }
+  ],
+  "compilerOptions": {},
+  "files": [],
+  "include": [],
+  "exclude": ["node_modules", "dist"]
+}

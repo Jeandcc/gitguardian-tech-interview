@@ -1,0 +1,29 @@
+{
+  "name": "project-xxx",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jean Costa <jean.adcc@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "back-end": "yarn workspace @project-xxx/back-end",
+    "front-end": "yarn workspace @project-xxx/front-end",
+    "types": "yarn workspace @project-xxx/types"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4"
+  }
+}
