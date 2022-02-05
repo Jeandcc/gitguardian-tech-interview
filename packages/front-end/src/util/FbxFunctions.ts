@@ -1,6 +1,6 @@
 import { FireFunctions } from '@/services/firebase';
 
-import { NsApiRequests } from '@gitguardian-tech-interview/types';
+// import { NsApiRequests } from '@gitguardian-tech-interview/types';
 
 const getTypedHttpFunc = <IReq, IRes>(funcName: string) => {
   interface ITypedHttpFunc extends firebase.default.functions.HttpsCallable {
@@ -12,10 +12,7 @@ const getTypedHttpFunc = <IReq, IRes>(funcName: string) => {
 };
 
 export default {
-  auth: {
-    login: getTypedHttpFunc<
-      NsApiRequests.NsAuth.ILoginReq,
-      NsApiRequests.NsAuth.ILoginRes
-    >('auth-login'),
+  scans: {
+    startMockUpdate: getTypedHttpFunc<{}, {}>('scans-startMockUpdate'),
   },
 };
