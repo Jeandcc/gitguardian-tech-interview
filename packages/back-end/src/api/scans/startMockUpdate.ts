@@ -7,7 +7,6 @@ import { dbCollections, dbDocs } from "@models/db";
 
 import WaitUtils from "@util/Wait";
 import ArrayUtils from "@util/Arrays";
-import FireUtil from "@util/Firebase";
 
 import { NsScans } from "@gitguardian-tech-interview/types";
 
@@ -30,12 +29,13 @@ export default https._onCallWithOptions(
     ];
 
     // We want to stay under Firebase's free-tier, so we'll delete
-    // items that are not the top 100 most recent "scans".
+    // items that are older than 1 hour
+    /*
     const deleteMocksInExcess = async () => {
       const snap = await dbCollections
         .secretsFound()
         .orderBy("time")
-        .startAt(20)
+        .endBefore(Date.now() - 1000 * 60 * 60)
         .get();
 
       snap.docs.forEach((d) => {
@@ -44,6 +44,7 @@ export default https._onCallWithOptions(
 
       await FireUtil.runBatchOperations();
     };
+    */
 
     const addMockScannedSecret = async () => {
       await Promise.all([
@@ -58,7 +59,8 @@ export default https._onCallWithOptions(
           repositoriesSearched: increment(1),
           secretsFound: increment(1),
         }),
-        deleteMocksInExcess(),
+        // deleteMocksInExcess(), // Disabling because reading &
+        // deleting is more expensive than just leaving it there
       ]);
 
       setTimeout(
