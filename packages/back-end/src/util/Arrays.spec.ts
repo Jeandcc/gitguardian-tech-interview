@@ -20,4 +20,10 @@ describe("array Utils", () => {
     const output = ArrayUtils.flatten(input);
     expect(output).toStrictEqual(EXPECTED_OUTPUT);
   });
+
+  it("successfully picks an item from a provided array", () => {
+    const inputArray = [1, 2, 3, 4, 5, 6];
+    const randomItem = ArrayUtils.pickRandomItem(inputArray);
+    expect(inputArray).toContain(randomItem);
+  });
 });

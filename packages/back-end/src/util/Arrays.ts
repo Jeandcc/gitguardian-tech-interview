@@ -12,4 +12,8 @@ export default class ArrayUtils {
 
     return result;
   }
+
+  public static pickRandomItem<T>(arr: T[]) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
 }

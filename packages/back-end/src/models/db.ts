@@ -12,14 +12,19 @@ import {
   NsSiteActivities,
   NsUserNotifications,
   NsUser,
+  NsScans,
 } from "@gitguardian-tech-interview/types";
 
 export const dbCollections = {
   users: () => collectionConverter<NsUser.IUser>("users"),
+
   userNotifications: (userId: string) =>
     collectionConverter<NsUserNotifications.INotification>(
       `users/${userId}/notifications`
     ),
+
+  secretsFound: () =>
+    collectionConverter<NsScans.IScannedSecret>("secretsFound"),
 };
 
 export const dbGroups = {
@@ -29,4 +34,9 @@ export const dbGroups = {
     ),
   activities:
     collectionGroupConverter<NsSiteActivities.IActivity>("activities"),
+};
+
+export const dbDocs = {
+  scanningStats: () =>
+    collectionConverter<NsScans.IScanningStats>("scanningStats").doc("index"),
 };
