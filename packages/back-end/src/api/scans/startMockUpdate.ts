@@ -66,7 +66,7 @@ export default https._onCallWithOptions(
 
       setTimeout(
         () => addMockScannedSecret(),
-        Math.random() * 15 * 1000 // Add new secret in 0 to 15 seconds
+        Math.random() * 5 * 1000 // Add new secret in 0 to 5 seconds
       );
     };
 
