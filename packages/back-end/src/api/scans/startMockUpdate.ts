@@ -56,7 +56,8 @@ export default https._onCallWithOptions(
         dbDocs.scanningStats().update({
           filesProcessed: increment(Math.ceil(Math.random() * 30)),
           mbSizeOfCodeScanned: increment(Math.ceil(Math.random() * 3)),
-          repositoriesSearched: increment(1),
+          repositoriesSearched:
+            Math.random() > 0.66 ? increment(1) : increment(0),
           secretsFound: increment(1),
         }),
         // deleteMocksInExcess(), // Disabling because reading &
