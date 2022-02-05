@@ -5,7 +5,7 @@ const nodeExternals = require("webpack-node-externals");
 const GeneratePackageJsonPlugin = require("generate-package-json-webpack-plugin");
 
 const basePackage = {
-  name: "@project-xxx/back-end",
+  name: "@gitguardian-tech-interview/back-end",
   version: "1.0.0",
   main: "./index.js",
   scripts: {
@@ -51,7 +51,7 @@ module.exports = {
     /^firebase.+$/,
     /^@google.+$/,
     nodeExternals({
-      allowlist: [/^@project-xxx/],
+      allowlist: [/^@gitguardian-tech-interview/],
     }),
     "node-fetch", // https://github.com/matthew-andrews/isomorphic-fetch/issues/194#issuecomment-737132024
   ],

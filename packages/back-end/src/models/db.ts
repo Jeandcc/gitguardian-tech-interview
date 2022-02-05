@@ -12,7 +12,7 @@ import {
   NsSiteActivities,
   NsUserNotifications,
   NsUser,
-} from "@project-xxx/types";
+} from "@gitguardian-tech-interview/types";
 
 export const dbCollections = {
   users: () => collectionConverter<NsUser.IUser>("users"),

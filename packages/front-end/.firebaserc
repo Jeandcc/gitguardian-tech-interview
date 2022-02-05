@@ -1,8 +1,8 @@
 {
   "projects": {
-    "default": "project-xxx",
-    "dev": "dev-project-xxx",
-    "prod": "project-xxx"
+    "default": "gitguardian-tech-interview",
+    "dev": "dev-gitguardian-tech-interview",
+    "prod": "gitguardian-tech-interview"
   },
   "targets": {}
 }

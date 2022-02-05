@@ -91,7 +91,7 @@ out
 .nuxt
 dist
 lib
-local-project-xxx
+local-gitguardian-tech-interview
 public
 
 # Gatsby files

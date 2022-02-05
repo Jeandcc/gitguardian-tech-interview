@@ -1,5 +1,5 @@
 {
-  "name": "@project-xxx/back-end",
+  "name": "@gitguardian-tech-interview/back-end",
   "private": true,
   "version": "1.0.0",
   "scripts": {
@@ -30,7 +30,7 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
-    "@project-xxx/types": "*",
+    "@gitguardian-tech-interview/types": "*",
     "@types/jest": "^27.0.2",
     "@types/yup": "^0.29.11",
     "@typescript-eslint/eslint-plugin": "^5.8.1",

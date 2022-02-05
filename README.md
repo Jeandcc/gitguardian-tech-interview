@@ -5,7 +5,7 @@ Starter Code for projects of high-complexity that use Webflow, Vue and Firebase
 
 After cloning this repository, follow the following steps:
 
-1. Replace all text occurrences of `project-xxx` with the name of your
+1. Replace all text occurrences of `gitguardian-tech-interview` with the name of your
    project (ex: **acme-corp-marketing-site**).
 2. At the root of the repository, run `yarn` to install the base dependencies
 3. Still at the root of the repository, run `yarn prepare` so Husky can be set up

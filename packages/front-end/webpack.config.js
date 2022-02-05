@@ -80,7 +80,7 @@ export default {
 
   output: {
     path: IS_LOCAL_DEV
-      ? path.resolve(process.cwd(),`local-project-xxx/project-xxx.web.app/scripts/`,)
+      ? path.resolve(process.cwd(),`local-gitguardian-tech-interview/gitguardian-tech-interview.web.app/scripts/`,)
       : path.resolve(process.cwd(), `public/scripts/`),
   },
 };

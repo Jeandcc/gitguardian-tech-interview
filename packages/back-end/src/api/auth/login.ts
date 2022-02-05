@@ -5,7 +5,7 @@ import PayloadValidator from "@services/validators/Payload";
 
 import FireUtil from "@util/Firebase";
 
-import { NsApiRequests } from "@project-xxx/types";
+import { NsApiRequests } from "@gitguardian-tech-interview/types";
 
 export default functions.https.onCall(
   async (data: NsApiRequests.NsAuth.ILoginReq) => {

@@ -4,7 +4,7 @@ import Bottleneck from "bottleneck";
 import Webflow, { WebflowApiModel } from "webflow-api";
 import { closestMatch } from "closest-match";
 
-import { IWfData } from "@project-xxx/types/src/Webflow";
+import { IWfData } from "@gitguardian-tech-interview/types/src/Webflow";
 
 import AppSecrets from "./AppSecrets";
 

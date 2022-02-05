@@ -1,6 +1,6 @@
 import { FireFunctions } from '@/services/firebase';
 
-import { NsApiRequests } from '@project-xxx/types';
+import { NsApiRequests } from '@gitguardian-tech-interview/types';
 
 const getTypedHttpFunc = <IReq, IRes>(funcName: string) => {
   interface ITypedHttpFunc extends firebase.default.functions.HttpsCallable {

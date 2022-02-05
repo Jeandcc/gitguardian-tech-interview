@@ -3,7 +3,7 @@
     "import/resolver": {
       "typescript": {}
     },
-    "import/internal-regex": "^@project-xxx/"
+    "import/internal-regex": "^@gitguardian-tech-interview/"
   },
 
   "env": {

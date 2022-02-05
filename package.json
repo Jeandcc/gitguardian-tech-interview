@@ -1,5 +1,5 @@
 {
-  "name": "project-xxx",
+  "name": "gitguardian-tech-interview",
   "private": true,
   "version": "1.0.0",
   "main": "index.js",
@@ -10,9 +10,9 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "back-end": "yarn workspace @project-xxx/back-end",
-    "front-end": "yarn workspace @project-xxx/front-end",
-    "types": "yarn workspace @project-xxx/types"
+    "back-end": "yarn workspace @gitguardian-tech-interview/back-end",
+    "front-end": "yarn workspace @gitguardian-tech-interview/front-end",
+    "types": "yarn workspace @gitguardian-tech-interview/types"
   },
   "config": {
     "commitizen": {
