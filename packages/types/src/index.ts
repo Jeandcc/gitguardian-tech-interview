@@ -4,3 +4,5 @@ export * as NsSiteActivities from "./SiteActivity";
 export * as NsUserNotifications from "./UserNotifications";
 
 export * as NsApiRequests from "./ApiRequests";
+
+export * as NsScans from "./Scans";
