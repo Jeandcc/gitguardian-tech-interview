@@ -1,2 +1,11 @@
-// eslint-disable-next-line no-console
-console.log('Hello World!');
+import Vue from 'vue';
+
+$(() => {
+  new Vue({
+    components: {},
+
+    data() {
+      return {};
+    },
+  }).$mount('#app');
+});
