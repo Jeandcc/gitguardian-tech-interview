@@ -7,7 +7,7 @@ import 'firebase/functions';
 import 'firebase/firestore';
 
 const prodConfig = {
-  apiKey: 'AIzaSyCMaA64Ofz8aT0cNbTeEzA9w5DUE9njcP4',
+  apiKey: 'AIzaSyCMaA64Ofz8aT0cNbTeEzA9w5DUE9njcP4', // API Key from Firebase that is meant to be public
   authDomain: 'gitguardian-tech-interview.firebaseapp.com',
   projectId: 'gitguardian-tech-interview',
   storageBucket: 'gitguardian-tech-interview.appspot.com',
@@ -16,7 +16,7 @@ const prodConfig = {
 };
 
 const devConfig = {
-  apiKey: 'AIzaSyCMaA64Ofz8aT0cNbTeEzA9w5DUE9njcP4',
+  apiKey: 'AIzaSyCMaA64Ofz8aT0cNbTeEzA9w5DUE9njcP4', // API Key from Firebase that is meant to be public
   authDomain: 'gitguardian-tech-interview.firebaseapp.com',
   projectId: 'gitguardian-tech-interview',
   storageBucket: 'gitguardian-tech-interview.appspot.com',
