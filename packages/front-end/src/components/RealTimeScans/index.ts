@@ -3,9 +3,10 @@ import { firestorePlugin } from 'vuefire';
 
 import { dbCollections, dbDocs } from '@/models/db';
 
+import BackendFunctions from '@/util/BackendFunctions';
+
 import { NsScans } from '@gitguardian-tech-interview/types';
 
-import BackendFunctions from '@/util/BackendFunctions';
 import ScannedSecret from './components/ScannedSecret';
 
 Vue.use(firestorePlugin);
