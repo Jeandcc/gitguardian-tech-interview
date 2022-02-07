@@ -5,7 +5,7 @@ import { dbCollections, dbDocs } from '@/models/db';
 
 import { NsScans } from '@gitguardian-tech-interview/types';
 
-import FbxFunctions from '@/util/FbxFunctions';
+import BackendFunctions from '@/util/BackendFunctions';
 import ScannedSecret from './components/ScannedSecret';
 
 Vue.use(firestorePlugin);
@@ -21,7 +21,7 @@ export default Vue.component('real-time-scans', {
   },
 
   created() {
-    FbxFunctions.scans.startMockUpdate();
+    BackendFunctions.scans.startMockUpdate({});
 
     this.$bind(
       'recentlyScannedSecrets',
