@@ -1,4 +1,4 @@
-import { FireFunctions, firebase } from '@/services/firebase';
+import { FireFunctions, firebase } from '@/services/Firebase';
 
 export default class FirebaseUtils {
   /**

@@ -1,4 +1,4 @@
-import { firebase } from '@/services/firebase';
+import { firebase } from '@/services/Firebase';
 
 // TODO: Improve. The deep nesting is causing TS errors, preventing us
 // from using this on some locations, such as the 'update' variation of

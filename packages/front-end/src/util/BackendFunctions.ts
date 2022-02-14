@@ -1,4 +1,4 @@
-import { FireFunctions } from '@/services/firebase';
+import { FireFunctions } from '@/services/Firebase';
 
 // import { NsApiRequests } from '@gitguardian-tech-interview/types';
 

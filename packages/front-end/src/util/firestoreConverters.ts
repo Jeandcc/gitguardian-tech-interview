@@ -1,4 +1,4 @@
-import { firebase, FireDb } from '@/services/firebase';
+import { firebase, FireDb } from '@/services/Firebase';
 
 import {
   TCustomCollectionGroupRef,
