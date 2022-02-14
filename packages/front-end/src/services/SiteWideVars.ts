@@ -23,10 +23,11 @@ export default class SiteWideVars {
     const textNodes = this.getDomTextNodes();
 
     textNodes.forEach(node => {
+      // eslint-disable-next-line no-param-reassign
       node.textContent =
-        node.textContent?.replace(/%(\w*)%/g, (m, key: keyof typeof data) => {
-          return data[key] ? data[key] : '';
-        }) || '';
+        node.textContent?.replace(/%(\w*)%/g, (m, key: keyof typeof data) =>
+          data[key] ? data[key] : '',
+        ) || '';
     });
   }
 }
