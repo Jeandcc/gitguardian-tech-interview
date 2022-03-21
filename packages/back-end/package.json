@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "say-hello": "tsc && cross-env NODE_ENV=development node lib/scripts/sayHello.js",
+    "manipulate-cms": "tsc && cross-env NODE_ENV=development node lib/scripts/manipulateCMS.js",
     "lint": "eslint --ext .js,.ts .",
     "build": "yarn handlebars src/templates/ -f src/templates/precompiled.js --extension \"hbs\" -c handlebars/runtime && webpack --config webpack.config.js",
     "start:dev": "cross-env NODE_ENV=development npm run build && firebase functions:shell -P dev",
